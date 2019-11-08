@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>codejam-canvas</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <span>Desktop - CodeJam Task</span>
+    <main>
+        <div class='appbar'>
+            <img id="menu" src="sheets/nav icon.png">
+            <div id='cj'>CodeJam - Pollete</div>
+            <img id="dots" src="sheets/menu icon.png" height="100%">
+        </div>
+        <div id="a" class="select">
+            <div class="cansv" id="img" onclick="showImg()"><a>Image</a></div>
+            <div class="cansv" id="x4" onclick="showx4()"><a>4x4</a></div>
+            <div class="cansv" id="x32" onclick="showx32()"><a>32x32</a></div>
+        </div>
+        <div id="b" class="select">
+            <div class='fifty'>
+                <div class="icon"><img src="sheets/icon-sh.png">Paint bucket</div>
+                <div class="icon"><img src="sheets/icon-upload.png">Choose color</div>
+            </div>
+            <div class='fifty'>
+                <div class="icon"><img src="sheets/icon-copy.png">Move</div>
+                <div class="icon"><img src="sheets/icon-share.png">Transform</div>
+            </div>
+        </div>
+        <div id="c" class="select">
+            <div>
+                <div class="icon"><div class="round" id="empty"></div>Current color</div>
+                <div class="icon"><div class="round" id="empty"></div>Prev color</div>
+            </div>
+            <div>
+                <div class="icon"><div class="round" id="red"></div>red</div>
+                <div class="icon"><div class="round" id="blue"></div>blue</div>
+            </div>
+        </div>
+        <canvas id="myCanvas" width="512" height="512">Your browser doesn't support canvas!</canvas>
+    </main>
+    <script id="i" src='index.js'></script>
+</body>
+</html>
