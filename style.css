@@ -9,6 +9,7 @@ main {
     max-width: 95%;
     margin: auto;
     background: rgb(245, 244, 244);
+    text-align: right;
 }
 #cj {
     font-weight: bold;
@@ -19,7 +20,7 @@ main {
     margin: 7px;
 }
 #dots {
-    margin: 15px 15px 15px 73%;
+    margin: 15px 15px 15px 60%;
 }
 
 .appbar {
@@ -36,25 +37,38 @@ main {
 .select {
     display: inline-block;
     position: absolute;
-    width: 140px;
-    height: 123px;
-    cursor: pointer;
+
     box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
     background-color: rgb(227, 229, 233);
 }
 .icon {
     display: flex;
-    margin: 7px;
+    padding: 7px;
 }
+.icon:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+input:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.bord {
+    border-bottom: 1px solid rgb(170, 164, 164);
+}
+
 img {
-    margin: -3px 6px;
+    margin: -1px 6px;
+}
+.bigger {
+    margin-right: 10px;
 }
 .round {
-    height: 8px;
-    width: 8px;
+    height: 15px;
+    width: 15px;
     border: 1px solid gray;
-    border-radius: 4px;
-    margin: 5px
+    border-radius: 50%;
+    margin: 0 5px;
 }
 .cansv {
     padding: 10px 20px 10px 30px;
@@ -83,11 +97,10 @@ span {
     margin: 3%;
 }
 #myCanvas {
-    width: 312px;
-    height: 312px;
+ 
     image-rendering: pixelated;
 
-    margin: 30px 20%;
+    margin: 35px;
     border: 1px solid rgba(88, 88, 88, 0.397);
-    background-color: rgba(255, 217, 0, 0.226);
+    background-color: white;
 }
